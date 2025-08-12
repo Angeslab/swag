@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Storm Cloud</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #2D3E50;
+      line-height: 1.6;
+    }
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 0;
+    }
+
+    /* Nav */
+    nav {
+      background: #2D3E50;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li {
+      font-weight: 500;
+    }
+    nav ul li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      background: #E0E0E0;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      width: fit-content;
+    }
+    .hero button:hover {
+      background: #43a047;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 0.25rem;
+      width: fit-content;
+    }
+    section p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin-bottom: 1rem;
+    }
+    .images-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .image-placeholder {
+      background: #ccc;
+      flex: 1;
+      min-width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      color: #555;
+      user-select: none;
+    }
+
+    /* Interaction & Tech */
+    .interaction-tech {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .diagram-placeholder {
+      background: #ccc;
+      flex: 1;
+      min-width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      color: #555;
+      user-select: none;
+    }
+    .tech-text {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1rem;
+    }
+
+    /* Footer quote */
+    .quote {
+      font-style: italic;
+      font-size: 1.25rem;
+      color: #2D3E50;
+      text-align: center;
+      margin: 3rem 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .interaction-tech {
+        flex-direction: column;
+      }
+      nav ul {
+        display: none; /* Hide nav links on smaller screens - you can add burger menu later */
+      }
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Personal Storm Cloud</div>
+    <ul>
+      <li>Home</li>
+      <li>Concept</li>
+      <li>Interaction</li>
+      <li>Impact</li>
+    </ul>
+  </nav>
+
+  <div class="hero container">
+    <h1>Personal Storm Cloud</h1>
+    <p>Visualizing Your Carbon Footprint in Real Time</p>
+    <button>Explore Concept</button>
+  </div>
+
+  <section class="container" id="concept">
+    <h2>Our Concept</h2>
+    <p>
+      Imagine a future where climate change is no longer an abstract concept hidden in data charts, but a visible part of daily life...
+    </p>
+    <div class="images-row">
+      <div class="image-placeholder">Image Placeholder 1</div>
+      <div class="image-placeholder">Image Placeholder 2</div>
+    </div>
+  </section>
+
+  <section class="container" id="interaction">
+    <h2>Interaction &amp; Technology</h2>
+    <div class="interaction-tech">
+      <div class="diagram-placeholder">Diagram Placeholder</div>
+      <div class="tech-text">
+        The storm cloud uses wearable AR or drone projection to create a visible and reactive representation of your current carbon footprint...
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="impact">
+    <h2>Future Impact</h2>
+    <div class="image-placeholder" style="height: 300px;">Impact Image Placeholder</div>
+    <p>
+      The Personal Storm Cloud provokes a new emotional connection with climate data, encouraging reflection and behavioral change.
+    </p>
+    <p class="quote">
+      “Would you change if your carbon impact followed you everywhere?”
+    </p>
+  </section>
+</body>
+</html>
