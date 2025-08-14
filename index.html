@@ -170,7 +170,7 @@
         flex-direction: column;
       }
       nav ul {
-        display: none; /* Hide nav links on smaller screens - you can add burger menu later */
+        display: none;
       }
     }
     @media (max-width: 480px) {
@@ -187,10 +187,10 @@
   <nav>
     <div class="logo">Personal Storm Cloud</div>
     <ul>
-      <li>Home</li>
-      <li>Concept</li>
-      <li>Interaction</li>
-      <li>Impact</li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#concept">Concept</a></li>
+      <li><a href="#interaction">Interaction</a></li>
+      <li><a href="#impact">Impact</a></li>
     </ul>
   </nav>
 
@@ -201,23 +201,40 @@
   </div>
 
   <section class="container" id="concept">
-    <h2>Our Concept</h2>
-    <p>
-      Imagine a future where climate change is no longer an abstract concept hidden in data charts, but a visible part of daily life...
-    </p>
-    <div class="images-row">
-      <div class="image-placeholder">Image Placeholder 1</div>
-      <div class="image-placeholder">Image Placeholder 2</div>
+  <h2>Our Concept</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+    <div style="flex: 2; min-width: 300px;">
+      <p>
+        Imagine a future where climate change is no longer an abstract concept hidden in data charts, but a visible part of daily life. In this world, every individual is followed by a personal storm cloud, a dynamic visual representation of their carbon footprint. The cloud changes shape, color, and intensity based on daily habits—transport choices, food consumption, energy usage, and even shopping patterns. This “storm cloud” is projected through wearable augmented reality glasses or small personal drones. People walking down the street carry their impact with them like a shadow, making environmental accountability visible to everyone.
+      </p>
+      <p>
+        A person who commutes by car might have a dark, swirling cloud overhead, while a cyclist or public transport user would be accompanied by a light, translucent cloud. The interaction is both personal and social. Individuals can track their impact in real time and make behavioral changes to improve their cloud—taking active steps like switching to renewable energy or reducing waste. Socially, the visibility of these clouds fosters community awareness, encouraging climate-positive competition and collective responsibility.
+      </p>
+      <p>
+        The technology draws on live data from personal devices and urban environmental sensors, merging biofeedback, lifestyle tracking, and environmental sensing into a single visual narrative. It raises important questions: Would we act differently if our environmental footprint was visible to everyone? Could personal responsibility, made public, accelerate climate action?
+      </p>
+      <p>
+        The Personal Storm Cloud provokes a new emotional connection with climate data. Instead of numbers on a screen, the environmental cost of our daily lives becomes tangible and impossible to ignore. This future imagines an interactive experience where design, technology, and human behavior merge, challenging us to confront the consequences of our actions in real time.
+      </p>
     </div>
-  </section>
+    <div class="image-placeholder" style="flex: 1; min-width: 300px;">Image Placeholder 1</div>
+  </div>
+</section>
+
 
   <section class="container" id="interaction">
     <h2>Interaction &amp; Technology</h2>
     <div class="interaction-tech">
-      <div class="diagram-placeholder">Diagram Placeholder</div>
+  
       <div class="tech-text">
         The storm cloud uses wearable AR or drone projection to create a visible and reactive representation of your current carbon footprint...
       </div>
+		  <div class="image-placeholder">Image Placeholder 2</div>
+      <div class="image-placeholder">Image Placeholder 3</div>
+      <div class="image-placeholder">Image Placeholder 4</div>
+      <div class="image-placeholder">Image Placeholder 5</div>
+      <div class="image-placeholder">Image Placeholder 6</div>
+      
     </div>
   </section>
 
