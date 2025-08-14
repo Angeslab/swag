@@ -204,20 +204,55 @@
         font-size: 0.9rem;
       }
     }
+    .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #2D3E50;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+}
+
   </style>
 </head>
 <body>
   <div id="home"></div>
 
-  <nav>
-    <div class="logo">Personal Storm Cloud</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#concept">Concept</a></li>
-      <li><a href="#interaction">Interaction</a></li>
-      <li><a href="#impact">Impact</a></li>
-    </ul>
-  </nav>
+ <nav>
+  <div class="logo">Personal Storm Cloud</div>
+  <div class="menu-toggle" id="menuToggle">☰</div>
+  <ul id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#concept">Concept</a></li>
+    <li><a href="#interaction">Interaction</a></li>
+    <li><a href="#impact">Impact</a></li>
+  </ul>
+</nav>
+
 
   <div class="hero container">
     <h1>Personal Storm Cloud</h1>
@@ -292,27 +327,34 @@
     </div>
   </div>
 </section>
+</body>
 <button id="backToTop">↑ Back to Top</button>
 
-  <!-- ✅ JavaScript for Button Behavior -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const backToTop = document.getElementById('backToTop');
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
 
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTop.style.display = 'block';
-        } else {
-          backToTop.style.display = 'none';
-        }
+        backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
       });
 
       backToTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
     });
   </script>
-</body>
+
 </html>
-</body>
-</html>
+
+
+
+
+
+
+
