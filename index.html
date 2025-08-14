@@ -29,6 +29,12 @@
       display: block;
     }
 
+    .image-box {
+      width: 300px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
     /* Container */
     .container {
       width: 90%;
@@ -114,22 +120,19 @@
       max-width: 700px;
       margin-bottom: 1rem;
     }
-    .images-row {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
 
     /* Interaction & Tech */
     .interaction-tech {
       display: flex;
       gap: 2rem;
       flex-wrap: wrap;
+      justify-content: center;
     }
     .tech-text {
-      flex: 1;
-      min-width: 300px;
+      flex: 1 1 100%;
       font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
     /* Footer quote */
@@ -148,9 +151,6 @@
       }
       .hero p {
         font-size: 1rem;
-      }
-      .interaction-tech {
-        flex-direction: column;
       }
       nav ul {
         display: none;
@@ -200,7 +200,7 @@
           The Personal Storm Cloud provokes a new emotional connection with climate data...
         </p>
       </div>
-      <div style="flex: 1; min-width: 300px;">
+      <div class="image-box">
         <img src="images/one.png" alt="Concept image">
       </div>
     </div>
@@ -212,17 +212,17 @@
       <div class="tech-text">
         The storm cloud uses wearable AR or drone projection to create a visible and reactive representation of your current carbon footprint...
       </div>
-      <div><img src="images/two.png" alt="Tech image 1"></div>
-      <div><img src="images/three.png" alt="Tech image 2"></div>
-      <div><img src="images/four.png" alt="Tech image 3"></div>
-      <div><img src="images/five.png" alt="Tech image 4"></div>
-      <div><img src="images/six.png" alt="Tech image 5"></div>
+      <div class="image-box"><img src="images/two.png" alt="Tech image 1"></div>
+      <div class="image-box"><img src="images/three.png" alt="Tech image 2"></div>
+      <div class="image-box"><img src="images/four.png" alt="Tech image 3"></div>
+      <div class="image-box"><img src="images/five.png" alt="Tech image 4"></div>
+      <div class="image-box"><img src="images/six.png" alt="Tech image 5"></div>
     </div>
   </section>
 
   <section class="container" id="impact">
     <h2>Future Impact</h2>
-    <div>
+    <div class="image-box">
       <img src="images/seven.png" alt="Impact image">
     </div>
     <p>
