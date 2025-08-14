@@ -10,12 +10,18 @@
       box-sizing: border-box;
       margin: 0; padding: 0;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: #fff;
       color: #2D3E50;
       line-height: 1.6;
     }
+
     a {
       color: #4CAF50;
       text-decoration: none;
@@ -64,18 +70,22 @@
       top: 0;
       z-index: 100;
     }
+
     nav .logo {
       font-size: 1.5rem;
       font-weight: 700;
     }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 1.5rem;
     }
+
     nav ul li {
       font-weight: 500;
     }
+
     nav ul li:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -90,14 +100,17 @@
       padding: 0 2rem;
       margin-bottom: 2rem;
     }
+
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
+
     .hero p {
       font-size: 1.25rem;
       margin-bottom: 1rem;
     }
+
     .hero button {
       background: #4CAF50;
       color: #fff;
@@ -108,13 +121,16 @@
       cursor: pointer;
       width: fit-content;
     }
+
     .hero button:hover {
       background: #43a047;
     }
 
     section {
       margin-bottom: 3rem;
+      scroll-margin-top: 100px;
     }
+
     section h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -122,6 +138,7 @@
       padding-bottom: 0.25rem;
       width: fit-content;
     }
+
     section p {
       font-size: 1rem;
       max-width: 700px;
@@ -163,6 +180,7 @@
         display: none;
       }
     }
+
     @media (max-width: 480px) {
       .hero h1 {
         font-size: 1.75rem;
@@ -174,6 +192,8 @@
   </style>
 </head>
 <body>
+  <div id="home"></div>
+
   <nav>
     <div class="logo">Personal Storm Cloud</div>
     <ul>
@@ -191,38 +211,34 @@
   </div>
 
   <section class="container" id="concept">
-  <h2>Our Concept</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
-    <div style="flex: 2; min-width: 300px;">
-      <p>
-        Imagine a future where climate change is no longer an abstract concept hidden in data charts, but a visible part of daily life. In this world, every individual is followed by a <em>Personal Storm Cloud</em> - a visual representation of their carbon footprint. This <em>Personal Storm Cloud</em> changes shape, colour and intensity based on your daily habits such as transport choices, food consumption, energy usage as well as your shopping patterns. This “storm cloud” is projected through use of wearable augmented reality glasses or small personal drones. People walking down the street would carry their impact with them like a shadow, making environmental accountability visible to everyone.
-      </p>
-      <p>
-        A person who commutes by car would have a dark, swirling cloud overhead, while a cyclist or public transport user would be accompanied by a light, translucent cloud. Individuals would be able to track their impact in real time and make behavioural changes to improve their "storm cloud" such as switching to renewable energy or reducing waste. Socially, the visibility of these clouds raises community awareness, encouraging climate-positive competition and collective responsibility.
-      </p>
-      <p>
-       <p>
-          This technology would draw on live data from personal devices and urban environmental sensors. This technology merges information such as biofeedback and lifestyle tracking into a single visual scene. It raises important questions:<br>
+    <h2>Our Concept</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+      <div style="flex: 2; min-width: 300px;">
+        <p>
+          Imagine a future where climate change is no longer an abstract concept hidden in data charts, but a visible part of daily life. In this world, every individual is followed by a <em>Personal Storm Cloud</em>—a visual representation of their carbon footprint. This cloud changes shape, colour and intensity based on your daily habits such as transport choices, food consumption, energy usage and shopping patterns.
+        </p>
+        <p>
+          A person who commutes by car would have a dark, swirling cloud overhead, while a cyclist or public transport user would be accompanied by a light, translucent cloud. Individuals could track their impact in real time and make behavioural changes to improve their "storm cloud"—like switching to renewable energy or reducing waste.
+        </p>
+        <p>
+          This technology would draw on live data from personal devices and urban environmental sensors. It merges biofeedback and lifestyle tracking into a single visual scene. It raises important questions:<br>
           <em>Would we act differently if our environmental footprint was visible to everyone?</em><br>
           <em>Could personal responsibility, made public, accelerate climate action?</em>
-          </p>
-      </p>
-      <p>
-        The <em>Personal Storm Cloud</em> provokes a new emotional connection with climate data. Instead of numbers on a screen, the environmental cost of our daily lives becomes tangible and impossible to ignore. This future imagines an interactive experience where design, technology and human behaviour merge, challenging us to confront the consequences of our actions in real time.
-      </p>
-    </div>
-
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem;">
-      <div class="image-box">
-        <img src="images/one.png" alt="Concept image">
+        </p>
+        <p>
+          The <em>Personal Storm Cloud</em> provokes a new emotional connection with climate data. Instead of numbers on a screen, the environmental cost of our daily lives becomes tangible and impossible to ignore.
+        </p>
       </div>
-      <div class="image-box">
-        <img src="images/two.png" alt="Additional concept image">
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem;">
+        <div class="image-box">
+          <img src="images/one.png" alt="Concept image">
+        </div>
+        <div class="image-box">
+          <img src="images/two.png" alt="Additional concept image">
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <section class="container" id="interaction">
     <h2>Interaction &amp; Technology</h2>
@@ -239,23 +255,24 @@
   </section>
 
   <section class="container" id="impact">
-  <h2>Future Impact</h2>
-  <div class="interaction-tech">
-    <div class="image-row">
-      <div class="image-box">
-        <img src="images/seven.png" alt="Impact image">
+    <h2>Future Impact</h2>
+    <div class="interaction-tech">
+      <div class="image-row">
+        <div class="image-box">
+          <img src="images/seven.png" alt="Impact image">
+        </div>
+        <div class="image-box">
+          <img src="images/five.png" alt="Additional impact image">
+        </div>
       </div>
-      <div class="image-box">
-        <img src="images/five.png" alt="Additional impact image">
-      </div>
-    </div>
-    <div class="tech-text" style="margin-top: 2rem;">
-      <p>
-        The <em>Personal Storm Cloud</em> provokes a new emotional connection with climate data, encouraging reflection and behavioural change.
-      </p>
-      <p class="quote" style="margin-top: 2rem;">
-        “Would you change if your carbon impact followed you everywhere?”
-      </p>
+      <div class="tech-text" style="margin-top: 2rem;">
+        <p>
+          The <em>Personal Storm Cloud</em> provokes a new emotional connection with climate data, encouraging reflection and behavioural change.
+        </p>
+        <p class="quote" style="margin-top: 2rem;">
+          “Would you change if your carbon impact followed you everywhere?”
+        </p>
+
     </div>
   </div>
 </section>
